@@ -1,0 +1,30 @@
+.functional__page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add__form{
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    display: flex;
+    rotate: 180deg;
+    background-color: #9fc258;
+    width: 700px;
+}
+
+.select{
+    display: flex;
+    width: 700px;
+    align-items: flex-start;
+}
+
+.emptyItems{
+    font-size: 30px;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: underline;
+    text-decoration-color: #9fc258;
+}

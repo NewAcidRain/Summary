@@ -1,0 +1,130 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 253, 251, 0.93);
+    cursor: pointer;
+    opacity: 0.9;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    -webkit-transition: 2s;
+}
+
+
+.skills:hover {
+    -webkit-box-shadow: 0 0 20px 7px #9fc258;
+    -moz-box-shadow: 0 0 20px 7px #9fc258;
+    box-shadow: 0 0 20px 7px #9fc258;
+    -webkit-transition: all .2s ease;
+    opacity: 1;
+}
+
+
+.content__description {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__me {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+.text {
+    width: 647px;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+}
+
+
+.stack {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stack__technology {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+.stack__technology__pos {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.type__stack {
+    color: white;
+    font-size: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+}
+
+.type__stack:hover {
+    text-decoration: underline;
+    text-decoration-color: #9fc258;
+}
+
+.text__block__title {
+    text-decoration: underline;
+    text-decoration-color: #9fc258;
+}
+
+.next {
+    rotate: 180deg;
+    transition: 0.2s;
+}
+
+
+.prev{
+    transition: 0.2s;
+}
+
+.prev:hover{
+    transition: 0.2s;
+    margin-right: 20px;
+}
+
+.next:hover{
+    transition: 0.2s;
+    margin-left: 20px;
+}
+
+.arrow {
+ width: 30px;
+}
+
+.arrow-pos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+

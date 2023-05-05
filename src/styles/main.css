@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    width: 100%;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    min-height: 100vh;
+    background-repeat: repeat;
+
+}
