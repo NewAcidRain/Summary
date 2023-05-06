@@ -2,9 +2,7 @@
     width: 700px;
     padding: 5px 15px;
     margin: 5px 0;
-    border: 1px solid #9fc258;
-    background-color: #131313;
-    color: white;
+    background: none;
     font-size: 20px;
     font-family: 'Ubuntu Mono', monospace;
 }

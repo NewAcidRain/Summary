@@ -1,0 +1,19 @@
+.input__pos{
+    margin-left: 60px;
+}
+.plus{
+    width: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.plus:hover{
+    transition: 0.4s;
+    rotate: 90deg;
+}
+.search__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

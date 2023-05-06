@@ -12,7 +12,7 @@ const Item = (props) => {
                 </div>
             </div>
             <div className={'item__btns'}>
-                <Button onClick={() => props.remove(props.item)}>Удалить</Button>
+                <Button color={"#9fc258"} borderColor={'#9fc258'} onClick={() => props.remove(props.item)}>Удалить</Button>
             </div>
         </div>
     );

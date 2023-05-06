@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./Button.module.css"
-const Button = ({children,...props}) => {
+const Button = ({borderColor,color,children,...props}) => {
     return (
-        <button {...props} className={classes.myBtn}>
+        <button style={{border: "2px solid color".replace('color',borderColor),color:color}} {...props} className={classes.myBtn}>
             {children}
         </button>
     );

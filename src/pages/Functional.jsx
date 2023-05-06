@@ -3,6 +3,7 @@ import '../styles/fuctional.css'
 import ItemList from "../components/ItemList";
 import ItemFilter from "../components/ItemFilter";
 import ItemForm from "../components/ItemForm";
+import Navigation from "../components/Navigation";
 
 const Functional = () => {
     const [items, setItems] = useState([
@@ -37,9 +38,10 @@ const Functional = () => {
 
     return (
         <div className={'functional__page'}>
-            <ItemForm create={createItem}/>
-            <hr style={{margin: "15px"}}/>
-            <ItemFilter filter={filter} setFilter={setFilter}/>
+            <Navigation next={'/api'} prev={'/description'}>
+                <div className={'title'}>Работа с массивами</div>
+            </Navigation>
+            <ItemFilter createItem={createItem} filter={filter} setFilter={setFilter}/>
             {sortedAndSearchedItems.length ?
                 <ItemList remove={deleteItem} items={sortedAndSearchedItems} title={'Фреймворки'}/> :
                 <div className={'emptyItems'}>Элементы не найдены</div>}

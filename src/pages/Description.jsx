@@ -13,6 +13,8 @@ import js from "../img/logo-javascript-svgrepo-com.svg"
 import student from "../img/graduation-svgrepo-com.svg"
 import laptop from "../img/laptop-computer-svgrepo-com.svg"
 import arrow from '../img/arrow-left.svg'
+import {Navigate} from "react-router-dom";
+import Navigation from "../components/Navigation";
 
 const Description = () => {
     const [modalActiveBackend, setModalActiveBackend] = useState(false)
@@ -42,12 +44,10 @@ const Description = () => {
                 </TextBlock>
             </div>
             <div className={'stack__technology'}>
-                <div className={'stack__technology__pos'}>
-                    <a className={'arrow-pos'} href={"/"}><img className={'prev arrow'} src={arrow} alt=""/></a>
+                <Navigation prev={'/'} next={'/functional'}>
                     <div onClick={() => setModalActiveBackend(true)} className={'type__stack'}>Backend</div>
                     <div onClick={() => setModalActiveFrontend(true)} className={'type__stack'}>Frontend</div>
-                    <a className={'arrow-pos'} href={"/functional"}><img className={'next arrow'} src={arrow} alt=""/></a>
-                </div>
+                </Navigation>
             </div>
             <Modal active={modalActiveBackend} setActive={setModalActiveBackend}>
                 <img style={{width: "150px"}} src={python}/>
